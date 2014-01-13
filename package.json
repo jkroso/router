@@ -1,8 +1,9 @@
 {
   "name": "router",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "express": "~3.3.4",
     "hbs": "~2.3.0"
-  }
+  },
+  "main": "lib/index.js"
 }
