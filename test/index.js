@@ -186,6 +186,16 @@ describe('Router', function () {
         })
         .go();
     });
+
+    it('should add the hash', function (done) {
+      new Router()
+        .replace('/#hash')
+        .on('/#hash', function (context, next) {
+          assert('/#hash' == context.path);
+          done();
+        })
+        .go();
+    });
   });
 
   describe('#start', function () {
